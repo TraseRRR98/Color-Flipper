@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <style>
+        #red {
+            background-color: rgb(215, 0, 0);
+        }
+        #red:hover{
+            background-color: rgb(255, 21, 48);
+        }
+        #green{
+            background-color: green;
+        }
+        #green:hover{
+            background-color: rgb(29, 251, 29);
+        }
+        #blue{
+            background-color: blue;
+        }
+
+        #blue:hover{
+            background-color: rgb(66, 66, 250);
+        }
+        button{
+            border-radius: 10px;
+            width: 100px;
+            height: 40px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h3>Color Flipper</h3>
+    <button id="red" onclick="setColor('red')">Red</button>
+    <button id="green" onclick="setColor('green')">Green</button>
+    <button id="blue" onclick="setColor('blue')">Blue</button>
+    <button id="random" onclick="randomColor()">Random</button>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
